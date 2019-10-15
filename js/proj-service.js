@@ -14,7 +14,8 @@ function createProject(id, name) {
     return {
         id,
         name,
-        "desc": "Game", "url": `projs/${id}`,
+        "desc": "Game", 
+        "url": `projs/${id}`,
         "publishedAt": Date.now(),
         "labels": ["Matrixes", "keyboard events"],
         "img": `projs/${id}/${id}.png`

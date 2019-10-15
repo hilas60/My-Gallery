@@ -1,16 +1,25 @@
 console.log('Starting up');
 
-init();
+// init();
 
-function init() {
+$(document).ready(function(){
     renderProjects();
-}
+    $('.portfolio-item > a').click(function(){
+        renderModal(+this.dataset.id);
+    })
+
+    // renderModal(),
+    }
+)
+
+// function init() {
+// }
 
 function renderProjects() {
     var projects = getProjects();
     var strHTMLs = projects.map(function (project) {
         return `<div class="col-md-4 col-sm-6 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                    <a class="portfolio-link" data-toggle="modal" data-id="${project.id}" href="#portfolioModal${project.id}">
                     <div class="portfolio-hover">
                         <div class="portfolio-hover-content">
                         <i class="fa fa-plus fa-3x"></i>
@@ -22,12 +31,19 @@ function renderProjects() {
                     <h4>${project.name}</h4>
                     <p class="text-muted">${project.labels}</p>
                     </div>
-                </div>`        
+                </div>`
     })
-    var elProjContainer = document.querySelector('.proj-container');
-    elProjContainer.innerHTML = strHTMLs.join('');
+    $('.proj-container').html(strHTMLs.join(''));
 }
 
-function renderModals() {
-    
+function renderModal(projectId) {
+    // var projects = getProjects();
+    var project = getProjects().find(function (project) {
+        return project.id === projectId
+    });
+    $(".portfolio-modal").attr("id",`portfolioModal${project.id}`); //proj ID
+    $(".modal-body>h2").text(project.name); //title
+    $(".modal-body>.item-intro").text(project.labels); //labels
+    $(".modal-body>img").attr("src", `${project.img}`); //image
+    $(".modal-body>.proj-description").text(project.desc); //desc
 }
