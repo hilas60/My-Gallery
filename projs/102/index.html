@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Touch the Numbers</title>
+        <link rel="stylesheet" href="css/touch-nums.css">
+    </head>
+
+    <body>
+        <h1>Touch the Numbers</h1>
+        <div class="timer">
+            <p>Your time is:
+                <span>00:00.000</span>
+            </p>
+                <div>
+                    <button onclick="initGame(16)">Easy(4x4)</button>
+                    <button onclick="initGame(25)">Normal(5x5)</button>
+                    <button onclick="initGame(36)">Hard(6x6)</button>
+                </div>
+        </div>
+        <div class="board">
+            <table></table>
+        </div>
+        <script src="js/touch-nums.js"></script>
+    </body>
+
+</html>
