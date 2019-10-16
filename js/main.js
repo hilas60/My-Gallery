@@ -7,13 +7,12 @@ $(document).ready(function(){
     $('.portfolio-item > a').click(function(){
         renderModal(+this.dataset.id);
     })
+    // $(form).submit(function() {
+    //     // $("form")
+    // })
 
-    // renderModal(),
     }
 )
-
-// function init() {
-// }
 
 function renderProjects() {
     var projects = getProjects();
@@ -37,7 +36,6 @@ function renderProjects() {
 }
 
 function renderModal(projectId) {
-    // var projects = getProjects();
     var project = getProjects().find(function (project) {
         return project.id === projectId
     });
@@ -46,4 +44,8 @@ function renderModal(projectId) {
     $(".modal-body>.item-intro").text(project.labels); //labels
     $(".modal-body>img").attr("src", `${project.img}`); //image
     $(".modal-body>.proj-description").text(project.desc); //desc
+}
+
+function onContactMe() {
+
 }
