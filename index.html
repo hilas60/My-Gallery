@@ -1,139 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <title>Coding Academy</title>
+    <title>Coding Academy</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom fonts for this template -->
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+      type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
-  <!-- Custom styles for this template -->
-  <link href="css/ca-gallery.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/ca-gallery.css" rel="stylesheet">
 
-</head>
+  </head>
 
-<body id="page-top">
-  <div class="offcanvas-btn" onClick="openCanvas()">
-    <i class="fa fa-comment" aria-hidden="true"></i>
-  </div>
-  <aside class="offcanvas-aside">
+  <body id="page-top">
+    <div class="offcanvas-btn" onClick="openCanvas()">
+      <i class="fa fa-comment" aria-hidden="true"></i>
+    </div>
+    <aside class="offcanvas-aside">
 
-  <!-- Contact -->
-  <section id="contact">
-    <h4>Contact Me</h4>
-  </section>
-    
-  </aside>
+      <!-- Contact -->
+      <section id="contact">
+        <div class="container">
+          <div class="col-md-5">
+            <div class="form-area">
+              <form role="form">
+                <br style="clear:both">
+                <h3 style="margin-bottom: 25px; text-align: center;">Contact Form</h3>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Mobile Number">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140"
+                    rows="7"></textarea>
+                </div>
+                <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Submit Form</button>
+              </form>
+            </div>
+          </div>
+        </div>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Meet Me</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <h4>Contact Me</h4> -->
+      </section>
+
+    </aside>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Meet Me</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+          data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+          aria-label="Toggle navigation">
           <i class="fa fa-bars"></i>
         </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Specialities</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#me">Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <header class="masthead">
-    <div class="container">
-      <div class="intro-text">
-        <div class="intro-lead-in">Welcome To my Portfolio</div>
-        <div class="intro-heading">It's Nice To Meet You</div>
-        <a class="btn btn-xl js-scroll-trigger" href="#services">Tell Me More</a>
-      </div>
-    </div>
-  </header>
-
-  <!-- Services -->
-  <section id="services">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Specialities</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Specialities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#me">Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="row text-center">
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in">Welcome To my Portfolio</div>
+          <div class="intro-heading">It's Nice To Meet You</div>
+          <a class="btn btn-xl js-scroll-trigger" href="#services">Tell Me More</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Specialities</h2>
+            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
             </span>
-          <h4 class="service-heading">E-Commerce</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex
-            magni, dicta impedit.</p>
-        </div>
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
+            <h4 class="service-heading">E-Commerce</h4>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
+              architecto quo inventore harum ex
+              magni, dicta impedit.</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
             </span>
-          <h4 class="service-heading">Responsive Design</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex
-            magni, dicta impedit.</p>
-        </div>
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
+            <h4 class="service-heading">Responsive Design</h4>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
+              architecto quo inventore harum ex
+              magni, dicta impedit.</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
             </span>
-          <h4 class="service-heading">Web Security</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex
-            magni, dicta impedit.</p>
+            <h4 class="service-heading">Web Security</h4>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
+              architecto quo inventore harum ex
+              magni, dicta impedit.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Portfolio Grid -->
-  <section class="bg-light" id="portfolio">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Portfolio</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+    <!-- Portfolio Grid -->
+    <section class="bg-light" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Portfolio</h2>
+            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          </div>
+        </div>
+        <div class="row proj-container">
         </div>
       </div>
-      <div class="row proj-container"> 
-      </div>
-    </div>
-  </section>
+    </section>
 
 
-  <!-- Me -->
-  <section class="bg-light" id="me" style="padding: 0px;">
+    <!-- Me -->
+    <section class="bg-light" id="me" style="padding: 0px;">
       <div class="row">
         <div class="col-sm-4">
           <div class="team-member">
@@ -143,126 +176,128 @@
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
                 <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
+                  <i class="fa fa-twitter"></i>
+                </a>
               </li>
               <li class="list-inline-item">
                 <a href="https://www.facebook.com/hila.shcherba">
-                    <i class="fa fa-facebook"></i>
-                  </a>
+                  <i class="fa fa-facebook"></i>
+                </a>
               </li>
               <li class="list-inline-item">
                 <a href="https://www.linkedin.com/in/hila-solomon-95b7b644/">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
+                  <i class="fa fa-linkedin"></i>
+                </a>
               </li>
             </ul>
           </div>
         </div>
         <div class="col-sm-8 flex-align-center">
-            <p class="large text-muted  about-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis,
-                totam corporis ea, alias ut unde. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis,
-                totam corporis ea, alias ut unde.</p>    
+          <p class="large text-muted  about-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+            eaque, laboriosam veritatis, quos non quis ad perspiciatis,
+            totam corporis ea, alias ut unde. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque,
+            laboriosam veritatis, quos non quis ad perspiciatis,
+            totam corporis ea, alias ut unde.</p>
         </div>
       </div>
-  </section>
+    </section>
 
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 flex-align-center">
-          <a href="http://coding-academy.org" target="_blank">
-            <img src="./img/ca-logo.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-4 flex-align-center">
-          <ul class="list-inline social-buttons flex-align-center">
-            <li class="list-inline-item">
-              <a href="#">
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 flex-align-center">
+            <a href="http://coding-academy.org" target="_blank">
+              <img src="./img/ca-logo.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-4 flex-align-center">
+            <ul class="list-inline social-buttons flex-align-center">
+              <li class="list-inline-item">
+                <a href="#">
                   <i class="fa fa-twitter"></i>
                 </a>
-            </li>
-            <li class="list-inline-item flex-align-center">
-              <a href="https://www.facebook.com/hila.shcherba">
+              </li>
+              <li class="list-inline-item flex-align-center">
+                <a href="https://www.facebook.com/hila.shcherba">
                   <i class="fa fa-facebook"></i>
                 </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.linkedin.com/in/hila-solomon-95b7b644/">
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/hila-solomon-95b7b644/">
                   <i class="fa fa-linkedin"></i>
                 </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-4 flex-align-center">
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 flex-align-center">
             <ul class="list-inline quicklinks">
-            <li class="list-inline-item">
-              <a href="#">More Me</a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">Even More</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Portfolio Modals -->
-
-  <!-- Modal 1 -->
-  <!-- <div class="modal-container"></div> -->
-  <div class="portfolio-modal modal fade" id="" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
+              <li class="list-inline-item">
+                <a href="#">More Me</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Even More</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2></h2>
-                <p class="item-intro text-muted"></p>
-                <img class="img-fluid d-block mx-auto" src="" alt="">
-                <p class="proj-description"></p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Threads</li>
-                  <li>Category: Illustration</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
+      </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+
+    <!-- Modal 1 -->
+    <!-- <div class="modal-container"></div> -->
+    <div class="portfolio-modal modal fade" id="" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2></h2>
+                  <p class="item-intro text-muted"></p>
+                  <img class="img-fluid d-block mx-auto" src="" alt="">
+                  <p class="proj-description"></p>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Threads</li>
+                    <li>Category: Illustration</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
                     Close Project</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/popper/popper.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Custom scripts for this template -->
-  <script src="js/ca-gallery.js"></script>
-  <script src="js/proj-service.js"></script>
-  <script src="js/offCanvas.js"></script>
-  <script src="js/main.js"></script>
-
+    <!-- Custom scripts for this template -->
+    <script src="js/ca-gallery.js"></script>
+    <script src="js/proj-service.js"></script>
+    <script src="js/offCanvas.js"></script>
+    <script src="js/main.js"></script>
 
 
-</body>
+
+  </body>
 
 </html>
