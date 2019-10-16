@@ -104,17 +104,21 @@ body {
     height: 20%;
 }
 
+#contact {
+    /* width: 70vh; */
+}
+
 form {
     width: max-content;
 }
 
 @media (min-width: 575px) {
     .offcanvas-btn-open {
-        margin-right: 30vw;
+        margin-right: 50vw;
     }
     .offcanvas-aside {
-        width: 30vw;
-        right: -30vw;
+        width: 50vw;
+        right: -50vw;
     }
 }
 .offcanvas-aside-open {

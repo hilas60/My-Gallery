@@ -5,16 +5,16 @@ var gProjects = createProjects();
 
 function createProjects() {
     return [
-        createProject(gNextId++, 'MineSweeper'),
-        createProject(gNextId++, 'Touch-Nums'),
+        createProject(gNextId++, 'MineSweeper', 'A great game to strengthen time wasting skills'),
+        createProject(gNextId++, 'Touch-Nums', 'Nice way to get kids learn how to count'),
     ]
 }
 
-function createProject(id, name) {
+function createProject(id, name, desc) {
     return {
         id,
         name,
-        "desc": "Game", 
+        desc,
         "url": `projs/${id}`,
         "publishedAt": Date.now(),
         "labels": ["Matrixes", "keyboard events"],

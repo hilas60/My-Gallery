@@ -1,15 +1,20 @@
 console.log('Starting up');
 
-// init();
-
 $(document).ready(function(){
     renderProjects();
     $('.portfolio-item > a').click(function(){
         renderModal(+this.dataset.id);
     })
-    // $(form).submit(function() {
-    //     // $("form")
-    // })
+
+    $('form').submit(function(){
+        var name = $('#name').val();
+        var userEmail = $('#email').val();
+        var userMobile = $('#mobile').val();
+        var subject = $('#subject').val();
+        var massage = $('#message').val();
+
+        window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=hilas60@gmail.com&su=${subject}&body='massage from ${name}, ${massage}. Contact details - Phone no. ${userMobile}, E-mail - ${userEmail}`)
+    })
 
     }
 )
